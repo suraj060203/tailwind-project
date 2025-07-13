@@ -4,7 +4,8 @@ import { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { FaHandSparkles } from "react-icons/fa";
 import CompaniesContainer from "./components/CompaniesContainer";
-import Stepbystep from "./components/Stepbystep";
+import Stepbystep1 from "./components/Stepbystep1";
+import Bentogrid from "./components/Bentogrid";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -135,7 +136,10 @@ function App() {
         </div>
 
         {/* Step by step */}
-         <Stepbystep/>
+         <Stepbystep1/>
+
+        {/* Bento-grid */}
+        <Bentogrid/>
 
         <div className="h-[500px]"></div>
       </main>
