@@ -3,12 +3,14 @@ import { FaArrowRight, FaFileCode, FaLaptopCode } from "react-icons/fa6";
 import { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { FaHandSparkles } from "react-icons/fa";
+import CompaniesContainer from "./components/CompaniesContainer";
+import Stepbystep from "./components/Stepbystep";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
       {/* Navbar */}
       <nav className="p-3 flex bg-white justify-between items-center">
         {/* Logo */}
@@ -18,23 +20,23 @@ function App() {
             alt="Logo"
             className="object-cover max-w-12 max-h-12"
           />
-          <span className="text-lg font-medium font-display ">ToDesktop</span>
+          <span className="text-lg font-display font-semibold ">ToDesktop</span>
         </a>
 
         <div className="gap-12 hidden lg:flex">
-          <a href="/#" className="font-medium hover:text-primary">
+          <a href="/#" className="font-semibold  hover:text-primary">
             Pricing
           </a>
-          <a href="/#" className="font-medium hover:text-primary">
+          <a href="/#" className="font-semibold  hover:text-primary">
             Docs
           </a>
-          <a href="/#" className="font-medium hover:text-primary">
+          <a href="/#" className="font-semibold  hover:text-primary">
             Changelog
           </a>
-          <a href="/#" className="font-medium hover:text-primary">
+          <a href="/#" className="font-semibold  hover:text-primary">
             Blogs
           </a>
-          <a href="/#" className="font-medium hover:text-primary">
+          <a href="/#" className="font-semibold  hover:text-primary">
             Login
           </a>
         </div>
@@ -97,9 +99,9 @@ function App() {
         <div id="hero" className="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
           <div id="hero-container" className="max-w-4xl mx-auto px-6 pb-32 pt-5 flex flex-col sm:items-center sm:text-center sm:pt-12">
             {/* Version text */}
-            <div id="version-text" className="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+            <div id="version-text" className="flex items-center my-6 gap-2 border border-yellow-200 hover:border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-[2px] transition group">
               <div className="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
-                <p className="font-display font-medium text-yellow-600">v0.21.1:<span className="text-yellow-800">Find-in-page bug fixes</span></p>
+                <p className="font-display font-medium text-yellow-600">v0.21.1:<span className="text-yellow-800"> Find-in-page bug fixes</span></p>
                 <FaArrowRight className="text-yellow-600 group-hover:translate-x-1 transition duration-300"/>
             </div>
 
@@ -127,7 +129,15 @@ function App() {
               <button className="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">Read Docs</button>
             </div>
           </div>
+
+          {/* Companies container */}
+          <CompaniesContainer/>
         </div>
+
+        {/* Step by step */}
+         <Stepbystep/>
+
+        <div className="h-[500px]"></div>
       </main>
     </div>
   );
