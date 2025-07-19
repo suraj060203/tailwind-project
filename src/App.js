@@ -2,7 +2,7 @@ import "./App.css";
 import { FaArrowRight, FaFileCode, FaLaptopCode } from "react-icons/fa6";
 import { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { FaHandSparkles } from "react-icons/fa";
+import { FaHandSparkles, FaTwitter, FaGithub } from "react-icons/fa";
 import CompaniesContainer from "./components/CompaniesContainer";
 import Stepbystep1 from "./components/Stepbystep1";
 import Bentogrid from "./components/Bentogrid";
@@ -159,7 +159,9 @@ function App() {
       </main>
       <footer class="px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32 font-display">
         <div class="rounded-lg border border-gray-100 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
-            <a href="/#" class="font-light font-display">Documentation</a>
+            <FaGithub className="text-xl text-gray-500"/>
+            <FaTwitter className="text-xl text-gray-500"/>
+            <a href="/#" class="font-display text-gray-400 text-lg">Documentation</a>
             <div class="flex gap-8 text-lg">
                 <a href="/#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
                 <a href="/#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
