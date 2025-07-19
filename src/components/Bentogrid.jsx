@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bentogrid = () => {
   return (
-    <div id="bento-grid" className="px-6 pb-32 pt-5 flex flex-col sm:items-center sm:text-center sm:pt-12">
+    <div id="bento-grid" className="px-6 pb-32 pt-5 flex flex-col sm:items-center sm:text-center sm:pt-12 lg:px-32">
         <h2 className="text-5xl sm:font-semibold mb-14 max-w-2xl leading-normal">ToDesktop handles the details</h2>
             <div id="grid-container" className="flex flex-col gap-6 lg:grid lg:grid-cols-3 grid-auto-rows:96px">
                 <div className='row-start-1 row-end-3 group rounded-2xl p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200'>

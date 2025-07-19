@@ -6,6 +6,10 @@ import { FaHandSparkles } from "react-icons/fa";
 import CompaniesContainer from "./components/CompaniesContainer";
 import Stepbystep1 from "./components/Stepbystep1";
 import Bentogrid from "./components/Bentogrid";
+import CompaniesFeatureLine from "./components/CompaniesFeatureLine";
+import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
+import FAQs from "./components/FAQs";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +59,7 @@ function App() {
           <IoMdMenu />
         </button>
       </nav>
-      {/* Fullscreen Menu overlay */}
+      {/* Fullscreen Menu overlay i.e Hamberger menu */}
       {isOpen && (
         <div className="fixed z-10 md:hidden inset-0 bg-white p-3">
           <div className="flex bg-white justify-between">
@@ -141,8 +145,39 @@ function App() {
         {/* Bento-grid */}
         <Bentogrid/>
 
-        <div className="h-[500px]"></div>
+        {/* Companies feature line */}
+        <CompaniesFeatureLine/>
+
+        {/* Testimonials */}
+        <Testimonials/>
+
+        {/* Pricing */}
+        <Pricing/>
+
+        {/* FAQ's */}
+        <FAQs/>
       </main>
+      <footer class="px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32 font-display">
+        <div class="rounded-lg border border-gray-100 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+            <a href="/#" class="font-light font-display">Documentation</a>
+            <div class="flex gap-8 text-lg">
+                <a href="/#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
+                <a href="/#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="/#" id="brand" class="flex gap-2 items-center flex-1">
+                <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo"/>
+                <span class="text-lg font-medium font-display">ToDesktop</span>
+            </a>
+        </div>
+
+        <div id="sub-footer" class="flex flex-col gap-6 items-center justify-center my-12">
+            <div class="flex gap-2 items-center ">
+                <img class="w-4 h-4" src="./assets/asset 48.svg" alt="Y-combinator"/>
+                <p class="text-sm text-gray-600">A Y Combinator company.</p>
+            </div>
+            <p class="text-sm text-gray-400">© 2025 ToDesktop, Inc. All rights reserved.</p>
+        </div>
+    </footer>
     </div>
   );
 }
