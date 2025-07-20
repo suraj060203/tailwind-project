@@ -21,7 +21,7 @@ function App() {
         {/* Logo */}
         <a href="/#" className="flex gap-2 items-center flex-1">
           <img
-            src="assets/asset 0.png"
+            src="/assets/asset 0.png"
             alt="Logo"
             className="object-cover max-w-12 max-h-12"
           />
