@@ -6,7 +6,7 @@ import { LuInfinity } from "react-icons/lu";
 const Testimonials = () => {
   return (
     <div id="testimonials" className="px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32">
-            <h2 className="text-5xl sm:font-semibold mb-14 lg:text-7xl">Customer stories</h2>
+            <h2 className="text-5xl sm:font-semibold mb-14 lg:text-7xl dark:text-white">Customer stories</h2>
 
             {/* Single review */}
             <div className='rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100'>
@@ -60,7 +60,7 @@ const Testimonials = () => {
             <div className="flex flex-col lg:flex-row justify-between gap-4 mt-6">
                 {/*grid review 1  */}
                 <div className="rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100 group ">
-                    <div className="rounded-2xl p-6 bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50 flex flex-col gap-6">
+                    <div className="rounded-2xl p-6 bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50 flex flex-col gap-6 dark:text-black">
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 bg-purple-200 flex items-center justify-center rounded-full">
                                 <IoCodeSlash className='text-2xl text-purple-500'/>
@@ -87,7 +87,7 @@ const Testimonials = () => {
 
                 {/* grid review 2 */}
                 <div className="rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100 group ">
-                    <div className="rounded-2xl p-6 bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50 flex flex-col gap-6">
+                    <div className="dark:text-black rounded-2xl p-6 bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50 flex flex-col gap-6">
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 bg-pink-200 flex items-center justify-center rounded-full">
                                 <FaWandMagicSparkles className='text-2xl text-pink-500'/>
@@ -115,7 +115,7 @@ const Testimonials = () => {
 
                 {/* grid review 3 */}
                 <div className="rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100 group">
-                    <div className="rounded-2xl p-6 bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50 flex flex-col gap-6">
+                    <div className="dark:text-black rounded-2xl p-6 bg-slate-50 group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50 flex flex-col gap-6">
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 bg-yellow-100 flex items-center justify-center rounded-full">
                                 <LuInfinity className='text-2xl text-yellow-500'/>

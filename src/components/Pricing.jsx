@@ -4,7 +4,7 @@ import { RxCross2, RxCheck } from "react-icons/rx";
 const Pricing = () => {
   return (
         <div id="pricing" className="px-6 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32">
-            <h2 className="text-5xl sm:font-semibold mb-14 lg:text-7xl">Choose a plan that fits your needs</h2>
+            <h2 className="text-5xl sm:font-semibold mb-14 lg:text-7xl dark:text-white">Choose a plan that fits your needs</h2>
             <div className="flex flex-col font-display lg:flex-row mt-6 gap-6">
 
                 {/* Free card */}

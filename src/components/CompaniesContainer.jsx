@@ -37,12 +37,12 @@ const CompaniesContainer = () => {
     <div id="companies-container" className="flex flex-col gap-8">
         <div id="companies-title" className="flex justify-center gap-2">
               <img src="assets/asset 2.svg" alt="down-arrow" className="translate-y-2"></img>
-              <span>APPS POWERED BY TODESKTOP</span>
+              <span className='lg:text-xl font-semibold dark:text-black'>APPS POWERED BY TODESKTOP</span>
               <img src="assets/asset 2.svg" alt="down-arrow" className="translate-y-2 -scale-x-100"></img>
         </div>
 
         {/* companies group */}
-        <div id="lines-group" className="flex flex-col gap-4">
+        <div id="lines-group" className="flex flex-col gap-4 dark:text-black">
             {/* line 1 */}
             <div id="line-1" ref={line1Ref} className="flex gap-4 w-screen -translate-x-48 " >
                 <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white border border-gray-300 rounded-xl md:min-h-32 md:min-w-32">
